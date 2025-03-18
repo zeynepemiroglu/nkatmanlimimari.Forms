@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{06A2FBA3-949F-49A4-8DA9-CA8286B67CF0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Yaz.Util.DeveloperSample</RootNamespace>
+    <AssemblyName>Util.DeveloperSample</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bpm.Business, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\Bpm\Bpm.Business.dll</HintPath>
+    </Reference>
+    <Reference Include="Control.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\Control\Control.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Control.Common.Base">
+      <HintPath>X:\Control\Control.Common.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Sp.net_profile, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\SP\Sp.net_profile.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Util.ActiveDirectory">
+      <HintPath>X:\Util\Util.ActiveDirectory.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.BaseControl.Interface">
+      <HintPath>X:\Util\Util.BaseControl.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.CacheManagement, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\Util\Util.CacheManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.Common.Business">
+      <HintPath>X:\Util\Util.Common.Business.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.Common.Client, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\Util\Util.Common.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.Common.Dml, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\Util\Util.Common.Dml.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.Common.Function, Version=1.0.2313.26424, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\Util\Util.Common.Function.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.Common.Interface, Version=1.0.2313.17594, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\Util\Util.Common.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.Common.Library, Version=6.4.1.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\Util\Util.Common.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.CommonDml.Interface">
+      <HintPath>X:\Util\Util.CommonDml.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.CommonYetki.Interface">
+      <HintPath>X:\Util\Util.CommonYetki.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.Control.Interface">
+      <HintPath>X:\Util\Util.Control.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.CryptionManagement, Version=1.0.2313.20383, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\Util\Util.CryptionManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.DataAccess, Version=1.0.2316.23839, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\Util\Util.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.ExceptionManagement, Version=1.0.2313.18677, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\Util\Util.ExceptionManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.FSManagement, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\Util\Util.FSManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.LogManagement.Helper">
+      <HintPath>X:\Util\Util.LogManagement.Helper.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.LogManagement.Interface">
+      <HintPath>X:\Util\Util.LogManagement.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.LogManagement.Library">
+      <HintPath>X:\Util\Util.LogManagement.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.MailManagement, Version=1.0.2313.18508, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\Util\Util.MailManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.Message.Library">
+      <HintPath>X:\Util\Util.Message.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.Misc, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\Util\Util.Misc.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.MQManagement, Version=1.0.2313.18337, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\Util\Util.MQManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.Sample, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\Util\Util.Sample.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.SequenceLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\Util\Util.SequenceLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.TableLibraryA, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\Tables\Util.TableLibraryA.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.TableLibraryB, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\Tables\Util.TableLibraryB.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.TableLibraryC, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\Tables\Util.TableLibraryC.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.TableLibraryD, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\Tables\Util.TableLibraryD.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.TableLibraryF, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\Tables\Util.TableLibraryF.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.TableLibraryH, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\Tables\Util.TableLibraryH.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.TableLibraryI, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\Tables\Util.TableLibraryI.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.TableLibraryK, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\Tables\Util.TableLibraryK.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.TableLibraryM, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\Tables\Util.TableLibraryM.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.TableLibraryN, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\Tables\Util.TableLibraryN.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.TableLibraryO, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\Tables\Util.TableLibraryO.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.TableLibraryP, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\Tables\Util.TableLibraryP.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.TableLibraryR, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\Tables\Util.TableLibraryR.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.TableLibraryS, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\Tables\Util.TableLibraryS.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.TableLibraryT, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\Tables\Util.TableLibraryT.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.TableLibraryV, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\Tables\Util.TableLibraryV.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.TableLibraryW, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\Tables\Util.TableLibraryW.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.TableLibraryY, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\Tables\Util.TableLibraryY.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.User.Business">
+      <HintPath>X:\Util\Util.User.Business.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.User.Function, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\Util\Util.User.Function.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.User.Interface, Version=1.0.2458.30058, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\Util\Util.User.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="Util.User.Management, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>X:\Util\Util.User.Management.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmException.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmException.Designer.cs">
+      <DependentUpon>FrmException.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSample.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSample.Designer.cs">
+      <DependentUpon>FrmSample.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmException.resx">
+      <DependentUpon>FrmException.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSample.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmSample.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Yaz.DbSqlExe.Forms\Yaz.DbSqlExe.Forms.csproj">
+      <Project>{E7E9513B-3E87-4BE9-8800-0F70A64138C5}</Project>
+      <Name>Yaz.DbSqlExe.Forms</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
